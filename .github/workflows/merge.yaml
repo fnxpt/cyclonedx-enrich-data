@@ -13,13 +13,16 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Update database
         run: |
+          ls
           LIST=`git diff --name-only -r ${{ github.event.before }} ${{ github.event.after }} **/*.json`
 
           for FILE in $LIST
           do
-              docker run --env-file ./.env fnxpt/cyclonedx-enrich:latest --database-import "$FILE"
+              docker run --env-file ./.env -v ./database.db:/database.db -v "$FILE":/bom.json fnxpt/cyclonedx-enrich:latest --database-import bom.json
           done
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
