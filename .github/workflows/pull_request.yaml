@@ -1,0 +1,18 @@
+name: Pull Request Validator
+
+on:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Validate sbom components against a schema
+        uses: cardinalby/schema-validator-action@v3
+        with:
+          file: 'data/**/*.json'
+          schema: 'schema.json' #TODO:SPECIFY SCHEMA

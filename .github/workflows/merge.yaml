@@ -1,0 +1,24 @@
+name: Database update
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update_database:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Update database
+        run: |
+          LIST=`git diff --name-only -r ${{ github.event.before }} ${{ github.event.after }} data/**/*.json`
+
+          for FILE in $LIST
+          do
+              KEY=`basename $FILE ".json"`
+              #CALL TOOL TO UPDATE DATABASE
+          done%
