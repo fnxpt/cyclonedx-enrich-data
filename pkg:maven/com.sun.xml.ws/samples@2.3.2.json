@@ -1,0 +1,52 @@
+{
+    "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.5",
+    "version": 1,
+    "metadata": {
+      "component": {
+        "publisher" : "Eclipse Foundation",
+        "group" : "com.sun.xml.ws",
+        "name" : "samples",
+        "version" : "2.3.2",
+        "description" : "Open source Reference Implementation of JSR-224: Java API for XML Web Services",
+        "licenses" : [
+          {
+            "license" : {
+              "id" : "BSD-3-Clause"
+            }
+          },
+          {
+            "license" : {
+              "id" : "Apache-2.0"
+            }
+          }
+        ],
+        "purl" : "pkg:maven/com.sun.xml.ws/samples@2.3.2?type=pom",
+        "externalReferences" : [
+          {
+            "type" : "website",
+            "url" : "https://projects.eclipse.org/projects/ee4j/jaxws-ri-bom/jaxws-ri-bom-ext/project/samples"
+          },
+          {
+            "type" : "distribution-intake",
+            "url" : "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+          },
+          {
+            "type" : "issue-tracker",
+            "url" : "https://github.com/eclipse-ee4j/metro-jax-ws/issues"
+          },
+          {
+            "type" : "mailing-list",
+            "url" : "https://dev.eclipse.org/mhonarc/lists/metro-dev"
+          },
+          {
+            "type" : "vcs",
+            "url" : "https://github.com/eclipse-ee4j/metro-jax-ws/samples"
+          }
+        ],
+        "type" : "library",
+        "bom-ref" : "pkg:maven/com.sun.xml.ws/samples@2.3.2?type=pom"
+      }
+    }
+  }
