@@ -14,5 +14,5 @@ jobs:
       - name: Validate sbom components against a schema
         uses: cardinalby/schema-validator-action@v3
         with:
-          file: 'data/**/*.json'
-          schema: 'schema.json' #TODO:SPECIFY SCHEMA
+          file: '**/*.json'
+          schema: 'https://raw.githubusercontent.com/CycloneDX/specification/1.6/schema/bom-1.5.schema.json'

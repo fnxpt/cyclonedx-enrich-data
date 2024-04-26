@@ -8,6 +8,8 @@ on:
 jobs:
   update_database:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -15,10 +17,16 @@ jobs:
           fetch-depth: 0
       - name: Update database
         run: |
-          LIST=`git diff --name-only -r ${{ github.event.before }} ${{ github.event.after }} data/**/*.json`
+          LIST=`git diff --name-only -r ${{ github.event.before }} ${{ github.event.after }} **/*.json`
 
           for FILE in $LIST
           do
-              KEY=`basename $FILE ".json"`
-              #CALL TOOL TO UPDATE DATABASE
-          done%
+              cp $FILE bom.json
+              docker run --env-file ./.env -v ${PWD}/database.db:/app/database.db -v ${PWD}/bom.json:/app/bom.json fnxpt/cyclonedx-enrich:latest --database-import bom.json
+              rm bom.json
+          done
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Inserted new boms into database
+          commit_options: '--no-verify --signoff'
+          file_pattern: 'database.db'
