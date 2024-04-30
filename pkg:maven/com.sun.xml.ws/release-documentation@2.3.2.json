@@ -1,0 +1,51 @@
+{
+    "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.5",
+    "version": 1,
+    "metadata": {
+        "component": {
+            "bom-ref": "pkg:maven/com.sun.xml.ws/release-documentation@2.3.2?classifier=docbook&type=zip",
+            "type": "library",
+            "group": "com.sun.xml.ws",
+            "name": "release-documentation",
+            "version": "2.3.2",
+            "scope": "required",
+            "licenses": [
+                {
+                    "license": {
+                        "name": "Apache 2.0"
+                    }
+                },
+                {
+                    "license": {
+                        "name": "EDL 1.0"
+                    }
+                }
+            ],
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "eb29e8be3e6970d89e180ecac5497d35"
+                },
+                {
+                    "alg": "SHA-1",
+                    "content": "464433be57acb7f0570d76c611ae1f37fc3e5653"
+                },
+                {
+                    "alg": "SHA-256",
+                    "content": "87bda996f30b53c1e8b7435fab627b464e603515681db04be3794b9fd189085b"
+                },
+                {
+                    "alg": "SHA-512",
+                    "content": "7d09fe3b9235fb59e68dd934f4f2dd8f6a4d1a3c4809217a7333441eadf2754e9d55457d3ff8d79385512c44c222934215f00f6025a59446a84d05c0c337147c"
+                },
+                {
+                    "alg": "SHA-384",
+                    "content": "a5d0af2f1be9971f5bd36a09d5866e15582ef51ef0b85e10c1ef1ec780915f4da350332dcdd0e432b4faf5460a077a25"
+                }
+            ],
+            "purl": "pkg:maven/com.sun.xml.ws/release-documentation@2.3.2?classifier=docbook&type=zip"
+        }
+    }
+}
