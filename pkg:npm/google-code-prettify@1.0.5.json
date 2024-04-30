@@ -1,0 +1,22 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "version": 1,
+  "metadata": {
+    "component": {
+      "bom-ref": "pkg:npm/google-code-prettify@1.0.5",
+      "type": "library",
+      "name": "google-code-prettify",
+      "version": "1.0.5",
+      "purl": "pkg:npm/google-code-prettify@1.0.5",
+      "licenses": [
+        {
+            "license": {
+                "name": "Apache-2.0"
+            }
+        }
+    ]
+    }
+  }
+}
