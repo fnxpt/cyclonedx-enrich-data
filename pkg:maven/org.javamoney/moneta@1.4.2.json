@@ -1,0 +1,46 @@
+{
+    "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.5",
+    "version": 1,
+    "metadata": {
+        "component": {
+            "bom-ref": "pkg:maven/org.javamoney/moneta@1.4.2?type=pom",
+            "type": "library",
+            "group": "org.javamoney",
+            "name": "moneta",
+            "version": "1.4.2",
+            "scope": "required",
+            "licenses": [
+                {
+                    "license": {
+                        "name": "Apache 2.0"
+                    }
+                }
+            ],
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "b68a9333c4a6fb665e7ea1132a75d433"
+                },
+                {
+                    "alg": "SHA-1",
+                    "content": "b908462cbae73ca8ee61ceda624ef7191dac03ab"
+                },
+                {
+                    "alg": "SHA-256",
+                    "content": "53d7c3052ee184d09e458391fe831cb721ed60aa4f642fd060ab2d6b0d32e3eb"
+                },
+                {
+                    "alg": "SHA-512",
+                    "content": "aabe4b0d4062a617985772e32ec6d06fb0dd5a221a2506299f76b4daec837f8cae2050eb982abc330a4f373f38419d1b21470a49b924111e06c9d2b700873fb5"
+                },
+                {
+                    "alg": "SHA-384",
+                    "content": "39db471232053e37c2f06be0d3d6b18b152eee21e4f225f9d2528a7eeaddea8381e30510fd83db223ea370218c1bd89c"
+                }
+            ],
+            "purl": "pkg:maven/org.javamoney/moneta@1.4.2?type=pom"
+        }
+    }
+}
