@@ -1,39 +1,51 @@
 {
-  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
-  "bomFormat": "CycloneDX",
-  "specVersion": "1.5",
-  "version": 1,
-  "metadata": {
-    "component": {
-      "bom-ref": "pkg:maven/com.sun.xml.ws/jaxws-ri@2.3.2?type=pom",
-      "type": "library",
-      "group": "com.sun.xml.ws",
-      "name": "jaxws-ri",
-      "version": "2.3.2",
-      "scope": "required",
-      "hashes": [
-        {
-          "alg": "MD5",
-          "content": "a0cbf1399c88a0435be995c0f68a3baa"
-        },
-        {
-          "alg": "SHA-1",
-          "content": "15ee0d893c452db7c4865eacb37cf5355c6c5cd7"
-        },
-        {
-          "alg": "SHA-256",
-          "content": "b3f164c170d7a281a5b869b0ead0fbca3f3c9e06a01b1be521460816eef861e5"
-        },
-        {
-          "alg": "SHA-512",
-          "content": "3cc8334f21ca594e6b62d5d18e6219bb781d2a51edd790bc981b80bcd701310ad4cb83541e19dd17214ff61d8c2fda09c83b2c6473da3a2360c770e8fdad53ce"
-        },
-        {
-          "alg": "SHA-384",
-          "content": "52b81b209ec0b5f4920420203fff8911f7d61defcbcef588debdfa85d2dc22f8d1126d02905092e7131a23698afec639"
+    "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.5",
+    "version": 1,
+    "metadata": {
+        "component": {
+            "bom-ref": "pkg:maven/com.sun.xml.ws/jaxws-ri@2.3.2?type=pom",
+            "type": "library",
+            "group": "com.sun.xml.ws",
+            "name": "jaxws-ri",
+            "version": "2.3.2",
+            "scope": "required",
+            "licenses": [
+                {
+                    "license": {
+                        "name": "Apache 2.0"
+                    }
+                },
+                {
+                    "license": {
+                        "name": "EDL 1.0"
+                    }
+                }
+            ],
+            "hashes": [
+                {
+                    "alg": "MD5",
+                    "content": "a0cbf1399c88a0435be995c0f68a3baa"
+                },
+                {
+                    "alg": "SHA-1",
+                    "content": "15ee0d893c452db7c4865eacb37cf5355c6c5cd7"
+                },
+                {
+                    "alg": "SHA-256",
+                    "content": "b3f164c170d7a281a5b869b0ead0fbca3f3c9e06a01b1be521460816eef861e5"
+                },
+                {
+                    "alg": "SHA-512",
+                    "content": "3cc8334f21ca594e6b62d5d18e6219bb781d2a51edd790bc981b80bcd701310ad4cb83541e19dd17214ff61d8c2fda09c83b2c6473da3a2360c770e8fdad53ce"
+                },
+                {
+                    "alg": "SHA-384",
+                    "content": "52b81b209ec0b5f4920420203fff8911f7d61defcbcef588debdfa85d2dc22f8d1126d02905092e7131a23698afec639"
+                }
+            ],
+            "purl": "pkg:maven/com.sun.xml.ws/jaxws-ri@2.3.2?type=pom"
         }
-      ],
-      "purl": "pkg:maven/com.sun.xml.ws/jaxws-ri@2.3.2?type=pom"
     }
-  }
 }

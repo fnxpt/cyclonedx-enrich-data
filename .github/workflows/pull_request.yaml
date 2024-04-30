@@ -11,8 +11,5 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Validate sbom components against a schema
-        uses: cardinalby/schema-validator-action@v3
-        with:
-          file: '**/*.json'
-          schema: 'https://raw.githubusercontent.com/CycloneDX/specification/1.6/schema/bom-1.5.schema.json'
+      - name: Validate files
+        run: docker run -v ${PWD}:/app/data/ fnxpt/cyclonedx-enrich:latest --sbom-validate 'data/**/**/*.json'
