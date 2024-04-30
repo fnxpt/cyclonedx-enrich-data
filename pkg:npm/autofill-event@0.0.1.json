@@ -1,0 +1,22 @@
+{
+    "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.5",
+    "version": 1,
+    "metadata": {
+        "component": {
+            "bom-ref": "pkg:npm/autofill-event@0.0.1",
+            "type": "library",
+            "name": "autofill-event",
+            "version": "0.0.1",
+            "purl": "pkg:npm/autofill-event@0.0.1",
+            "licenses": [
+                {
+                    "license": {
+                        "name": "MIT license"
+                    }
+                }
+            ]
+        }
+    }
+}
